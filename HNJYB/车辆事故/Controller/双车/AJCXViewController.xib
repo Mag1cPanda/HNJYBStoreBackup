@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AJCXViewController">
+            <connections>
+                <outlet property="tipsLab" destination="vOU-Zb-LP8" id="pxn-WD-5mO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您的案件已被交警转为【现场处理】，您可以直接报警处理！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOU-Zb-LP8">
+                    <rect key="frame" x="20" y="229" width="335" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="6vB-mt-slV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5g-kG-hPf">
+                    <rect key="frame" x="15" y="303" width="345" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="uCi-8N-a4R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="直接报警！" backgroundImage="blue">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confimBtnClicked:" destination="-1" eventType="touchUpInside" id="2cE-LO-lXs"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IP023" translatesAutoresizingMaskIntoConstraints="NO" id="cEA-zi-Ute">
+                    <rect key="frame" x="20" y="61" width="335" height="144"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="144" id="CS0-pe-pyU"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cEA-zi-Ute" firstAttribute="trailing" secondItem="vOU-Zb-LP8" secondAttribute="trailing" id="3Zh-Yo-lTZ"/>
+                <constraint firstItem="cEA-zi-Ute" firstAttribute="leading" secondItem="vOU-Zb-LP8" secondAttribute="leading" id="6AE-zg-JaH"/>
+                <constraint firstItem="y5g-kG-hPf" firstAttribute="top" secondItem="vOU-Zb-LP8" secondAttribute="bottom" constant="14" id="W0A-bK-wbb"/>
+                <constraint firstItem="vOU-Zb-LP8" firstAttribute="centerX" secondItem="y5g-kG-hPf" secondAttribute="centerX" id="dDJ-Y5-BVZ"/>
+                <constraint firstItem="vOU-Zb-LP8" firstAttribute="top" secondItem="cEA-zi-Ute" secondAttribute="bottom" constant="24" id="hkj-Wo-PLG"/>
+                <constraint firstItem="cEA-zi-Ute" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="jEV-zE-hMp"/>
+                <constraint firstItem="cEA-zi-Ute" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mA0-cb-eGP"/>
+                <constraint firstItem="cEA-zi-Ute" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="61" id="nJs-Jg-YBN"/>
+                <constraint firstItem="y5g-kG-hPf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="wvu-3B-biT"/>
+            </constraints>
+            <point key="canvasLocation" x="25" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IP023" width="362" height="187"/>
+        <image name="blue" width="52" height="88"/>
+    </resources>
+</document>
